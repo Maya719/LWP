@@ -41,6 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/live-wallpapers', [LiveWallpaperController::class, 'index'])->name('live_wallpapers.index');
 
 
+    // 3d wallpapers routes
     Route::get('/3d-wallpapers', [ThreeDWallpaperController::class, 'index'])->name('3d_wallpapers.index');
     Route::get('/3d-wallpapers/create', [ThreeDWallpaperController::class, 'create'])->name('3d_wallpapers.create');
     Route::get('/3d-wallpapers/{id}/edit', [ThreeDWallpaperController::class, 'edit'])->name('3d_wallpapers.edit');
